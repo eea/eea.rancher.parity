@@ -1,0 +1,3 @@
+%~d0
+cd %~dp0
+java -Xms256M -Xmx1024M -cp .;../lib/routines.jar;../lib/log4j-1.2.16.jar;../lib/slf4j-api-1.7.5.jar;../lib/slf4j-log4j12-1.7.5.jar;../lib/jersey-core-1.4.jar;../lib/talendcsv.jar;../lib/asm-1.0.2.jar;../lib/jersey-client-1.4.jar;../lib/talend_file_enhanced_20070724.jar;../lib/json-path-1.2.0.jar;../lib/dom4j-1.6.1.jar;../lib/jakarta-oro-2.0.8.jar;../lib/json-smart-2.1.0.jar;rancher2text_3_0_1.jar; local_project.rancher2text_3_0_1.rancher2text_3 --context=dev %* 

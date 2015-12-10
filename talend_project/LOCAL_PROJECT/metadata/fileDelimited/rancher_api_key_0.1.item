@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Fn10YJhZEeWg-MFYi5gOPw" name="rancher_api_key" dataPackage="_Fn10YZhZEeWg-MFYi5gOPw" Server="Localhost 127.0.0.1" FilePath="/tmp/talend/rancher_api.properties" Encoding="UTF-8" FieldSeparatorValue="&quot;\t&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Tabulation"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Fn10YZhZEeWg-MFYi5gOPw" name="default" dataManager="_Fn10YJhZEeWg-MFYi5gOPw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Fn10YphZEeWg-MFYi5gOPw" id="_4nzskJhYEeWg-MFYi5gOPw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fn10Y5hZEeWg-MFYi5gOPw" label="userName" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fn10ZJhZEeWg-MFYi5gOPw" label="passWord" length="40" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Fn10ZZhZEeWg-MFYi5gOPw" label="environment" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

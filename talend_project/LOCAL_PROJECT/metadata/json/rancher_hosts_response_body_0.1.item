@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_0xVZkJjBEeWDJK38eZDknQ" name="rancher_hosts_response_body" dataPackage="_0xVZlpjBEeWDJK38eZDknQ" JSONFilePath="/tmp/talend/response_hosts.txt" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_0xVZkZjBEeWDJK38eZDknQ" LimitBoucle="50" AbsoluteXPathQuery="$.data[*]">
+      <schemaTargets xmi:id="_0xVZkpjBEeWDJK38eZDknQ" RelativeXPathQuery="name" TagName="name"/>
+      <schemaTargets xmi:id="_kypTMJkMEeWDJK38eZDknQ" RelativeXPathQuery="id" TagName="id"/>
+      <schemaTargets xmi:id="_QqNiIJkIEeWDJK38eZDknQ" RelativeXPathQuery="$.links.self" TagName="self"/>
+      <schemaTargets xmi:id="_0xVZk5jBEeWDJK38eZDknQ" RelativeXPathQuery="state" TagName="state"/>
+      <schemaTargets xmi:id="_dgSqEJjDEeWDJK38eZDknQ" RelativeXPathQuery="info.osInfo.dockerVersion" TagName="dockerVersion"/>
+      <schemaTargets xmi:id="_cC8iUJjDEeWDJK38eZDknQ" RelativeXPathQuery="info.osInfo.operatingSystem" TagName="operatingSystem"/>
+      <schemaTargets xmi:id="_baMgQJjDEeWDJK38eZDknQ" RelativeXPathQuery="info.osInfo.kernelVersion" TagName="kernelVersion"/>
+      <schemaTargets xmi:id="_LOxXsJkJEeWDJK38eZDknQ" RelativeXPathQuery="info.cpuInfo.count" TagName="count"/>
+      <schemaTargets xmi:id="_g7D6cJkIEeWDJK38eZDknQ" RelativeXPathQuery="info.memoryInfo.memTotal" TagName="memTotal"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_0xVZlpjBEeWDJK38eZDknQ" name="default" dataManager="_0xVZkJjBEeWDJK38eZDknQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0xVZl5jBEeWDJK38eZDknQ" id="_jX7dwJjBEeWDJK38eZDknQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuwJkMEeWDJK38eZDknQ" label="name" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuwZkMEeWDJK38eZDknQ" label="id" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuwpkMEeWDJK38eZDknQ" label="self" length="59" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuw5kMEeWDJK38eZDknQ" label="state" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuxJkMEeWDJK38eZDknQ" label="dockerVersion" length="41" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuxZkMEeWDJK38eZDknQ" label="operatingSystem" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuxpkMEeWDJK38eZDknQ" label="kernelVersion" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIux5kMEeWDJK38eZDknQ" label="count" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nYIuyJkMEeWDJK38eZDknQ" label="memTotal" length="9" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

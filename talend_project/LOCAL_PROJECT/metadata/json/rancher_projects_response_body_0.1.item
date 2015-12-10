@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="__k_30Ji-EeWprveHZeIV_g" name="rancher_projects_response_body" dataPackage="__k_31Zi-EeWprveHZeIV_g" JSONFilePath="/tmp/talend/16F78FCDD043C7099EDB.rensponse" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="__k_30Zi-EeWprveHZeIV_g" LimitBoucle="50" AbsoluteXPathQuery="$.data[*]">
+      <schemaTargets xmi:id="__k_30pi-EeWprveHZeIV_g" RelativeXPathQuery="name" TagName="name"/>
+      <schemaTargets xmi:id="__k_305i-EeWprveHZeIV_g" RelativeXPathQuery="description" TagName="description"/>
+      <schemaTargets xmi:id="__k_31Ji-EeWprveHZeIV_g" RelativeXPathQuery="links.hosts" TagName="hosts"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="__k_31Zi-EeWprveHZeIV_g" name="default" dataManager="__k_30Ji-EeWprveHZeIV_g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__k_31pi-EeWprveHZeIV_g" id="_s1dPgJi-EeWprveHZeIV_g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__k_315i-EeWprveHZeIV_g" label="name" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__k_32Ji-EeWprveHZeIV_g" label="description" length="56" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__k_32Zi-EeWprveHZeIV_g" label="hosts" length="54" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
